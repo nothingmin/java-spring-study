@@ -27,7 +27,7 @@ public class HelloController {
         return "hello " + name;
     }
 
-      @GetMapping("hello-api")
+    @GetMapping("hello-api")
     @ResponseBody
     public Hello helloApi(@RequestParam("name") String name){
         Hello hello = new Hello();
